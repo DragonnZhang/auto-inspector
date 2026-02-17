@@ -35,6 +35,7 @@ export class ChromiumBrowser implements Browser {
     } else {
       browser = await chromium.launch({
         headless: false,
+        channel: 'chrome',
       });
     }
 
